@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ListView
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/contactListView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+</ListView>

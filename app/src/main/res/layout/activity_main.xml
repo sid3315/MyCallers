@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    android:background="@drawable/back1"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <Switch
+        android:layout_height="25dp"
+        android:layout_width="50dp"
+        android:text="Switch"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:thumb="@drawable/switch_thumb_selector"
+        android:switchMinWidth="50dp"
+        android:track="@drawable/switch_track_selector"
+        android:id="@+id/switch1"
+        android:layout_alignParentRight="true"/>
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/RGroup"
+        android:visibility="invisible"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Contacts Only"
+            android:id="@+id/contactOnly"/>
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Specific Numbers"
+            android:layout_marginTop="15dp"
+            android:id="@+id/specific"
+            android:onClick="showContacts"/>
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="National Only"
+            android:layout_marginTop="15dp"
+            android:id="@+id/national"/>
+
+     </RadioGroup>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/chooseContact"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvContacts"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/RGroup"/>
+
+</RelativeLayout>
